@@ -1,38 +1,85 @@
+@font-face {
+  font-family: FormulaRegular;
+  src: url(assets/Formula1-Regular.ttf);
+}
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/formula-1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.logo img {
+  max-width: 300px;
+}
+
+.season {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  font-size: 34px;
+  color: #ee0000;
+}
+
+.card-container {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.race-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'FormulaRegular';
+}
+
+.arrow {
+  cursor: pointer;
+  width: 50px;
+  height: auto;
+  padding: 100px;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 4px solid #ee0000;
+  border-radius: 10px;
+  background: #ffe6e6c6;
+  padding: 30px;
+  font-size: 14px;
+}
+
+.round {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'FormulaRegular';
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  color: #ee0000;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  font-weight: 500;
 }
